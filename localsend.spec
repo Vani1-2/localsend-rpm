@@ -1,12 +1,11 @@
-
 %global __brp_check_rpaths %{nil}
 %global debug_package %{nil}
 
 Name:           localsend
 Version:        1.17.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        An open source cross-platform alternative to AirDrop
-License:        Apache 2.0
+License:        Apache-2.0
 URL:            https://localsend.org
 Source0:        https://github.com/localsend/localsend/releases/download/v%{version}/LocalSend-%{version}-linux-x86-64.tar.gz
 
@@ -22,9 +21,10 @@ and messages with nearby devices over your local network without an internet con
 %setup -q -c -n %{name}-%{version}
 
 %build
-
+# this a binary, so nothing to build
 
 %install
+
 mkdir -p %{buildroot}%{_libdir}/%{name}
 cp -r * %{buildroot}%{_libdir}/%{name}/
 
@@ -51,7 +51,7 @@ EOF
 
 
 mkdir -p %{buildroot}%{_datadir}/icons/hicolor/512x512/apps
-find . -name "logo-512.png" -exec cp {} %{buildroot}%{_datadir}/icons/hicolor/512x512/apps/%{name}.png \;
+install -m 644 data/flutter_assets/assets/img/logo-512.png %{buildroot}%{_datadir}/icons/hicolor/512x512/apps/%{name}.png
 
 %check
 desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
@@ -63,5 +63,5 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/512x512/apps/%{name}.png
 
 %changelog
-* Sat Dec 20 2025 Vani <vani@example.com> - 1.17.0-1
-- Repackaged official binaries for Fedora with RPATH fixes
+* Sat Dec 20 2025 Vani <vani@example.com> - 1.17.0-2
+- Fixed missing icon on the dash
