@@ -44,6 +44,7 @@ Name=LocalSend
 Comment=Share files to nearby devices
 Exec=%{name}
 Icon=%{name}
+StartupWMClass=localsend_app
 Terminal=false
 Type=Application
 Categories=Utility;FileTools;
