@@ -6,7 +6,7 @@ Name:           localsend
 Version:        1.17.0
 Release:        1%{?dist}
 Summary:        An open source cross-platform alternative to AirDrop
-License:        MIT
+License:        Apache 2.0
 URL:            https://localsend.org
 Source0:        https://github.com/localsend/localsend/releases/download/v%{version}/LocalSend-%{version}-linux-x86-64.tar.gz
 
