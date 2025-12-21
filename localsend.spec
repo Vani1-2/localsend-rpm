@@ -3,7 +3,7 @@
 
 Name:           localsend
 Version:        1.17.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        An open source cross-platform alternative to AirDrop
 License:        Apache-2.0
 URL:            https://localsend.org
@@ -64,5 +64,5 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/512x512/apps/%{name}.png
 
 %changelog
-* Sat Dec 20 2025 Vani <vani@example.com> - 1.17.0-2
+* Sat Dec 20 2025 Vani <vani@example.com> - 1.17.0-3
 - Fixed missing icon on the dash
