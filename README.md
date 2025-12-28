@@ -12,13 +12,8 @@ LocalSend is a free, open-source application that allows you to securely share f
 
 ## This package is no longer on copr 
 
-However you can still use this repo to build an `.rpm` package by using this
-command at the root of this repo:
-```bash
-make -f .copr/Makefile srpm
-
-```
-
+However you can still use this repo to build an `.rpm` package by following
+the local build instructions
 
 
 ## 🚀 How It Works
