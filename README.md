@@ -10,22 +10,16 @@ LocalSend is a free, open-source application that allows you to securely share f
 
 > **⚠️ Note:** This repository contains the **RPM spec files** used to repackage the official generic Linux binaries provided by the upstream developers. It is not affiliated with the LocalSend team.
 
-## 📦 Installation
+## This package is no longer on copr 
 
-You can install LocalSend on Fedora, CentOS Stream, and other RPM-based distributions by enabling this COPR repository.
-
-### 1. Enable the Repository
+However you can still use this repo to build an `.rpm` package by using this
+command at the root of this repo:
 ```bash
-sudo dnf copr enable vaniiiiii/localsend
+make -f .copr/Makefile srpm
 
 ```
 
-### 2. Install LocalSend
 
-```bash
-sudo dnf install localsend
-
-```
 
 ## 🚀 How It Works
 
