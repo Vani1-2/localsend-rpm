@@ -16,7 +16,7 @@ However you can still use this repo to build an `.rpm` package by following
 the local build instructions
 
 
-## 🚀 How It Works
+## How It Works
 
 Since LocalSend is built with Flutter and does not currently provide official RPM builds, this package:
 
@@ -25,7 +25,7 @@ Since LocalSend is built with Flutter and does not currently provide official RP
 3. Installs them to `/usr/lib64/localsend`.
 4. Sets up the desktop entry, icons, and executable wrapper so it integrates seamlessly with your desktop environment (GNOME, KDE, etc.).
 
-## 🔨 Building Locally
+## Building Locally
 
 If you want to build the RPM yourself instead of using COPR:
 
@@ -50,7 +50,7 @@ If the package is out of date or broken:
 1. Open an issue in this repository.
 2. Or submit a Pull Request bumping the `Version:` in `localsend.spec`.
 
-## 📜 Credits
+## Credits
 
 * **Original Application:** [LocalSend](https://localsend.org) by [Tien Do Nam](https://github.com/Tienisto).
 * **Packaging:** Maintained by [Vani1-2](https://github.com/Vani1-2).
